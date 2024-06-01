@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(./font/Poppins-Regular.woff2) format('woff2');
+  }
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(../font/Poppins-SemiBold.woff) format('woff');
+  }
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(../font/Poppins-Medium.woff2) format('woff2');
+  }
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(../font/Poppins-Bold.woff2) format('woff2');
+  }
+  @font-face {
+    font-family: 'Dm sans';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(../font/DmSans-Regular.woff2) format('woff2');
+  }
+  @font-face {
+    font-family: 'Dm sans';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(../font/DmSans-Medium.woff2) format('woff2');
+  }
+  @font-face {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(../font/Oswald-SemiBold.woff2) format('woff2');
+  }
+  @font-face {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(../font/Oswald-Bold.woff2) format('woff2');
+  }
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(../font/Montserrat-Bold.woff2) format('woff2');
+  }
+
+  h1, h2, h3, h4, h5 {
+   font-family: 'Poppins', sans-serif;
+  }
+  body {
+   font-family: 'Dm sans', sans-serif;
+  }
+}
+
+p {
+ @apply text-gray-300;
+}
