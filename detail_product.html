@@ -1,0 +1,123 @@
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="./src/css/style.css" />
+  <link rel="stylesheet" href="./src/css/custom.css" />
+  <link rel="stylesheet" href="./src/css/aos.css" />
+  <title>Detail</title>
+</head>
+<body class="bg-dark">
+ <div class="abolute top-0 left-0 mt-4 ml-4">
+  <a href="index.html" class="text-xl"> ⬅️ Back</a>
+ </div>
+   <div
+   data-aos="fade-down"
+   data-aos-delay="300"
+   data-aos-duration="1000"
+   class="blur-xl md:blur-2xl lg:blur-3xl relative -z-[999]"
+  >
+   <div
+    class="w-24 h-24 md:w-44 md:h-44 lg:w-72 lg:h-72 lg:-mt-24 absolute -mt-8 ml-4 bg-gradient-to-r from-blue-600 via-purple-500 to-purple-200 rounded-full"
+   ></div>
+  </div>
+ <section id="producDetail" class="mb-24">
+  <div class="container">
+   <div class="flex flex-wrap">
+    <div class="w-full lg:w-1/2">
+     <div class="p-8">
+     <img class="lg:w-[360px]" src="src/img/cam.png" alt="camera">
+     </div>
+    </div>
+    <div class="w-full lg:w-1/2 lg:mt-16">
+     <h1 class="text-2xl lg:text-4xl font-bold">Canon 600D</h1> 
+     <p class="lg:text-xl mt-2">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+     <div class="mt-2">⭐⭐⭐⭐⭐ 5.0/5.0</div >
+     <div class="grid grid-cols-4 mt-4">
+      <p class="px-2 mt-2">Time:</p>
+      <div class="w-10 h-10 text-sm border-2 border-primary bg-primary rounded-full text-center text-center">
+       <p class="mt-2 text-[10px]">6 Jam</p>
+      </div>
+      <div class="w-10 h-10 text-sm border-2 border-primary rounded-full text-center">
+       <p class="mt-2 text-[10px]">12 Jam</p>
+      </div>
+      <div class="w-10 h-10 text-sm border-2 border-primary rounded-full text-center">
+       <p class="mt-2 text-[10px]">24 Jam</p>
+      </div>
+
+     </div>
+     <div class="flex lg:mt-8">
+     <div class="w-1/2">
+      <p class="px-2 mt-4">Colors: </p>
+      <div class="flex mt-2 justify-start">
+      <div class="w-8 mx-2 h-5 rounded-lg border-2 border-primary bg-gray-200 bg-white"></div>
+      <div class="w-8 mx-2 h-5 rounded-lg border-2 border-primary bg-gray-200 bg-slate-900"></div>
+      </div>
+     </div>
+     <div class="w-1/2">
+      <p class="px-2 mt-4">Quantity: </p>
+      <span class="pesan ml-2 text-sm text-primary"></span>
+      <div class="flex mt-2">
+       <div class="w-8 h-6 bg-gray-300 text-center mx-2 text-primary rounded-lg">-</div>
+       <form action="">
+        <input class="w-8 h-6 mx-2 text-primary border-none" type="number" value="1">
+       </form>
+       <div class="w-8 h-6 mx-2 bg-gray-300 text-center text-primary rounded-lg">+</div>
+      </div>
+     </div>
+    </div>
+    </div>
+   </div>
+  </div>
+    <div class="cart px-4 w-full bg-slate-700 py-2 fixed bottom-0">
+     <p class="font-semibold">Total:</p>
+    <div class="flex">
+     <div class="w-1/2"><h3 class="text-3xl font-bold mt-2">Rp. 60K</h3></div>
+     <div class="w-1/2 flex justify-end mr-4">
+     <button class="btn text-white border-none bg-gradient-to-br from-blue-600 to-violet-500 hover:bg-blue-700 focus:ring-blue-800 text-dark mr-4 -mt-2">Add cart</button>
+     </div>
+    </div>
+    </div>
+ </section>
+ <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const decrementButton = document.querySelector(".flex .bg-gray-300.text-primary.rounded-lg:first-child");
+    const incrementButton = document.querySelector(".flex .bg-gray-300.text-primary.rounded-lg:last-child");
+    const inputNumber = document.querySelector(".flex input[type='number']");
+
+    const minValueMessage = document.querySelector(".pesan")
+    minValueMessage.textContent = "Pesanan minimal 1";
+ 
+
+    decrementButton.addEventListener("click", function() {
+      if (inputNumber.value > 1) {
+        inputNumber.stepDown();
+        minValueMessage.style.display = "none";
+      } else {
+        minValueMessage.style.display = "inline";
+      }
+    });
+
+    incrementButton.addEventListener("click", function() {
+      inputNumber.stepUp();
+      minValueMessage.style.display = "none";
+    });
+
+    inputNumber.addEventListener("change", function() {
+      if (inputNumber.value < 1) {
+        inputNumber.value = 1;
+        minValueMessage.style.display = "inline";
+      } else {
+        minValueMessage.style.display = "none";
+      }
+    });
+  });
+</script>
+  <!-- akhirbatas section otherSkill -->
+  <script src="./flowbite/dist/flowbite.min.js"></script>
+  <script src="src/js/script.js"></script>
+  <script src="src/js/aos.js"></script>
+  <script>
+   AOS.init();
+  </script>
+</body>
+</html>
