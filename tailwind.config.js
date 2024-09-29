@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./*.html", "/data/data/com.termux/files/home/node_modules/flowbite/**/*.js"],
+  content: ["./**/*.html", // "/data/data/com.termux/files/home/node_modules/flowbite/**/*.js"
+  ],
   theme: {
    fontFamily : {
     'head': ['"Poppins', 'sans-serif']
@@ -17,7 +18,7 @@ module.exports = {
     },
   },
   plugins: [
-   require('/data/data/com.termux/files/home/node_modules/flowbite/plugin'),
+  //  require('/data/data/com.termux/files/home/node_modules/flowbite/plugin'),
    require('/data/data/com.termux/files/home/node_modules/daisyui'),
    ],
    daisyui: {

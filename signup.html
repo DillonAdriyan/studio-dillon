@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Sign Up Page</title>
+ <link rel="stylesheet" href="src/css/style.css">
+ <script src="https://kit.fontawesome.com/f21ac27679.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-gradient-to-b from-black to-gray-900 min-h-screen flex items-center justify-center">
+ <div class="text-center space-y-8 px-2">
+  <!-- Logo and Heading -->
+  <div class="space-y-2">
+   <div class="flex justify-center">
+    <img src="../src/img/brain.png" alt="Crypto Logo" class="mx-auto h-20 w-20 drop-shadow-md shadow-purple-500">
+   </div>
+   <h1 class="text-white text-3xl font-bold">Sign Up</h1>
+   <p class="text-gray-400">
+    Sign Up for add cart.
+   </p>
+  </div>
+
+  <!-- Sign Up Form -->
+  <div class="space-y-6">
+   <div class="relative">
+    <input type="text"
+    placeholder="Username"
+    class="w-full bg-gray-800
+    text-white py-3 pl-10 pr-4
+    rounded-lg focus:outline-none
+    focus:border-pink-500
+    focus:shadow-md
+    focus:shadow-pink-400">
+    <span class="absolute left-3 top-3 text-pink-400">
+     <!-- SVG Icon for User -->
+     <i class="fa-regular fa-user"></i>
+    </span>
+   </div>
+
+   <div class="relative">
+    <input type="password"
+    placeholder="Password" id="pw"
+    class="w-full bg-gray-800
+    text-white py-3 pl-10 pr-4
+    rounded-lg focus:outline-none
+    focus:border-pink-500
+    focus:shadow-md focus:shadow-pink-400">
+    <span class="absolute left-3 top-3 text-pink-400">
+     <!-- SVG Icon for Lock -->
+     <i class="fa-solid fa-lock"></i>
+
+    </span>
+    <span class="absolute right-3 top-3 text-pink-400">
+     <!-- SVG Icon for Eye -->
+     <i id="eye" class="fa-regular fa-eye-slash ml-2"></i>
+    </span>
+   </div>
+
+   <!-- Sign Up Button -->
+   <button class="w-full bg-gradient-to-r
+    from-pink-500 to-purple-600 text-white
+    py-3 rounded-lg text-md font-semibold">Sign Up</button>
+  </div>
+
+  <!-- Links -->
+  <div class="flex justify-between text-pink-500 text-sm">
+   <a
+    href="https://127.0.0.1:8000/auth/forgot-password/"
+    class="hover:underline">Forgot
+    Password?</a>
+   <a href="login.html"
+    class="hover:underline">Login</a>
+  </div>
+
+  <!-- Metamask Button -->
+  <button class="w-full border border-pink-500 text-pink-500 py-3 rounded-lg flex items-center justify-center space-x-2">
+   <img src="https://via.placeholder.com/20" alt="Metamask Icon">
+   <span>Entrar com a Metamask</span>
+  </button>
+ </div>
+ <script>
+  const pw = document.querySelector("input#pw")
+  const eye = document.querySelector('i#eye')
+  const eyeSlash = document.querySelector('.fa-eye-slash')
+  eye.addEventListener('click', function(){
+  if (pw.type === 'password') {
+  pw.type = 'text'
+  eye.classList.remove('fa-eye-slash')
+
+  eye.classList.add('fa-eye')
+  } else {
+  pw.type = 'password'
+  eye.classList.add('fa-eye-slash')
+  eye.classList.remove('fa-eye')
+
+
+  }
+  })
+ </script>
+</body>
+</html>
