@@ -19,7 +19,7 @@
         translateX(-2.1rem);
         font-size: 0.875rem; /* Smaller font size */
         font-weight: 500;
-        color: #ec4899; /* Change label color on focus */
+        color: #8248ec; /* Change label color on focus */
       }
     </style>
 </head>
@@ -49,12 +49,12 @@
         <input type="text" id="username" placeholder=" "
         class="w-full input-focused bg-gray-800 text-white py-3
         pl-10 pr-4 rounded-lg focus:outline-none
-        focus:border-pink-500 focus:shadow-md
-        focus:shadow-pink-600 peer">
+        focus:border-purple-500 focus:shadow-md
+        focus:shadow-purple-600 peer">
         <label for="username"
         class="floating-label absolute left-10
         top-3 text-gray-400">Username</label>
-        <span class="absolute left-3 top-3 text-pink-400">
+        <span class="absolute left-3 top-3 text-purple-400">
           <i class="fa-regular fa-user"></i>
         </span>
       </div>
@@ -62,12 +62,12 @@
         <input type="email" placeholder=" "
         class="w-full input-focused bg-gray-800 text-white py-3
         pl-10 pr-4 rounded-lg focus:outline-none
-        focus:border-pink-500 focus:shadow-md
-        focus:shadow-pink-600 peer">
+        focus:border-purple-500 focus:shadow-md
+        focus:shadow-purple-600 peer">
         <label for="email" class="floating-label
         absolute left-10 top-3
         text-gray-400">Email</label>
-        <span class="absolute left-3 top-3 text-pink-400">
+        <span class="absolute left-3 top-3 text-purple-400">
           <i class="fa-regular fa-envelope"></i>
         </span>
       </div>
@@ -77,15 +77,15 @@
         <input type="password" placeholder=" "
         id="pw" class="w-full input-focused bg-gray-800
         text-white py-3 pl-10 pr-4 rounded-lg
-        focus:outline-none focus:border-pink-500
-        focus:shadow-md focus:shadow-pink-600 peer">
+        focus:outline-none focus:border-purple-500
+        focus:shadow-md focus:shadow-purple-600 peer">
         <label for="pw" class="floating-label
         absolute left-10 top-3
         text-gray-400">Password</label>
-        <span class="absolute left-3 top-3 text-pink-400">
+        <span class="absolute left-3 top-3 text-purple-400">
           <i class="fa-solid fa-key"></i>
         </span>
-        <span class="absolute right-3 top-3 text-pink-400 cursor-pointer">
+        <span class="absolute right-3 top-3 text-purple-400 cursor-pointer">
           <i id="eye" onclick="showPw(1)" class="fa-regular fa-eye-slash ml-2"></i>
         </span>
       </div>
@@ -96,25 +96,31 @@
         placeholder=" " id="pw2"
         class="w-full input-focused bg-gray-800 text-white py-3
         pl-10 pr-4 rounded-lg focus:outline-none
-        focus:border-pink-500 focus:shadow-md
-        focus:shadow-pink-600 peer">
+        focus:border-purple-500 focus:shadow-md
+        focus:shadow-purple-600 peer">
         <label for="pw2" class="floating-label
         absolute left-10 top-3
         text-gray-400">Confirm Password</label>
-        <span class="absolute left-3 top-3 text-pink-400">
+        <span class="absolute left-3 top-3 text-purple-400">
           <i class="fa-solid fa-lock"></i>
         </span>
-        <span class="absolute right-3 top-3 text-pink-400 cursor-pointer">
+        <span class="absolute right-3 top-3 text-purple-400 cursor-pointer">
           <i id="eye2" onclick="showPw(2)" class="fa-regular fa-eye-slash ml-2"></i>
         </span>
       </div>
 
       <!-- Sign Up Button -->
-      <button class="w-full col-span-1 md:col-span-2 bg-gradient-to-r from-pink-500 to-purple-600 text-white py-3 rounded-lg text-md font-semibold transition duration-300 hover:shadow-lg hover:from-pink-600 hover:to-purple-700">Sign Up</button>
+      <button class="w-full col-span-1
+      md:col-span-2 bg-gradient-to-br from-primary
+      via-purple-500 to-blue-600 text-white py-3
+      rounded-lg text-md font-semibold transition
+      duration-300 hover:shadow-lg
+      hover:from-purple-600
+      hover:to-purple-700">Sign Up</button>
     </div>
 
     <!-- Links -->
-    <div class="flex justify-center text-pink-500
+    <div class="flex justify-center text-purple-500
     text-sm mt-4 space-x-1">
      <span>Already have an account? </span>
       <a href="login.html" class="hover:underline
@@ -132,18 +138,18 @@
   
   <!-- Horizontal Line -->
   <div class="absolute inset-0 flex items-center justify-center">
-    <div class="w-full h-0.5 bg-pink-500 rounded-full"></div>
+    <div class="w-full h-0.5 bg-purple-500 rounded-full"></div>
   </div>
 </div>
 
 
     <!-- Google Signup Button -->
     <div id="socialAccount" class="space-y-4">
-    <button class="w-full border border-pink-500 text-pink-500 py-3 rounded-lg flex items-center justify-center space-x-2 transition duration-300 hover:bg-pink-500 hover:text-white">
+    <button class="w-full border border-purple-500 text-purple-500 py-3 rounded-lg flex items-center justify-center space-x-2 transition duration-300 hover:bg-purple-500 hover:text-white">
       <i class="fa-brands fa-google"></i>
       <span>Sign Up with Google</span>
     </button>
-    <button class="w-full border border-pink-500 text-pink-500 py-3 rounded-lg flex items-center justify-center space-x-2 transition duration-300 hover:bg-pink-500 hover:text-white">
+    <button class="w-full border border-purple-500 text-purple-500 py-3 rounded-lg flex items-center justify-center space-x-2 transition duration-300 hover:bg-purple-500 hover:text-white">
       <i class="fa-brands fa-facebook"></i>
       <span> Sign Up with Facebook</span>
     </button>

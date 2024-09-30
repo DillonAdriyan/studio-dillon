@@ -19,12 +19,12 @@
         translateX(-2.1rem);
         font-size: 0.875rem; /* Smaller font size */
         font-weight: 500;
-        color: #ec4899; /* Change label color on focus */
+        color: #8248ec; /* Change label color on focus */
       }
     </style>
 </head>
 <body class="bg-gray-900 min-h-screen">
-  <div class="absolute top-0 left-0 w-60 h-60 -mt-16 -ml-20 drop-shadow-md shadow-pink-300">
+  <div class="absolute top-0 left-0 w-60 h-60 -mt-16 -ml-20 drop-shadow-md shadow-purple-300">
     <svg class="fill-slate-800" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
       <path d="M35.2,-56.7C46.4,-54.6,56.7,-46.6,62.1,-36.2C67.6,-25.8,68.2,-12.9,67.1,-0.6C66,11.6,63.2,23.3,56.2,30.9C49.1,38.5,37.8,42.2,27.7,51.8C17.6,61.4,8.8,77,-3.5,83.1C-15.9,89.3,-31.8,86,-42.6,76.7C-53.3,67.5,-59,52.4,-61,38.6C-63.1,24.9,-61.6,12.4,-64.1,-1.5C-66.7,-15.4,-73.3,-30.8,-71.2,-44.4C-69.1,-58.1,-58.2,-70,-44.9,-71C-31.6,-71.9,-15.8,-61.8,-1.9,-58.6C12,-55.3,24.1,-58.9,35.2,-56.7Z" transform="translate(100 100)" />
     </svg>
@@ -46,9 +46,9 @@
         <!-- Username Field -->
         <div class="relative">
           <input type="text" id="username" placeholder=" " 
-                 class="input-focused w-full bg-gray-800 text-white py-3 pl-10 pr-4 rounded-lg focus:outline-none focus:border-pink-500 focus:shadow-md focus:shadow-pink-600 peer">
+                 class="input-focused w-full bg-gray-800 text-white py-3 pl-10 pr-4 rounded-lg focus:outline-none focus:border-purple-500 focus:shadow-md focus:shadow-purple-600 peer">
           <label for="username" class="floating-label absolute left-10 top-3 text-gray-400">Username</label>
-          <span class="absolute left-3 top-3 text-pink-400">
+          <span class="absolute left-3 top-3 text-purple-400">
             <i class="fa-regular fa-user"></i>
           </span>
         </div>
@@ -56,18 +56,18 @@
         <!-- Password Field -->
         <div class="relative">
           <input type="password" id="pw" placeholder=" " 
-                 class="input-focused w-full bg-gray-800 text-white py-3 pl-10 pr-4 rounded-lg focus:outline-none focus:border-pink-500 focus:shadow-md focus:shadow-pink-600 peer">
+                 class="input-focused w-full bg-gray-800 text-white py-3 pl-10 pr-4 rounded-lg focus:outline-none focus:border-purple-500 focus:shadow-md focus:shadow-purple-600 peer">
           <label for="pw" class="floating-label absolute left-10 top-3 text-gray-400">Password</label>
-          <span class="absolute left-3 top-3 text-pink-400">
+          <span class="absolute left-3 top-3 text-purple-400">
             <i class="fa-solid fa-lock"></i>
           </span>
-          <span class="absolute right-3 top-3 text-pink-400">
+          <span class="absolute right-3 top-3 text-purple-400">
             <i id="eye" class="fa-regular fa-eye-slash ml-2"></i>
           </span>
         </div>
 
         <!-- Login Button -->
-        <button class="w-full bg-gradient-to-r from-pink-500 to-purple-600 text-white py-3 rounded-lg text-md font-semibold">Login</button>
+        <button class="w-full bg-gradient-to-br from-primary via-purple-500 to-blue-600 text-white py-3 rounded-lg text-md font-semibold">Login</button>
       </div>
 
       <!-- Links -->
@@ -78,17 +78,17 @@
         </div>
         <!-- Horizontal Line -->
         <div class="absolute inset-0 flex items-center justify-center">
-          <div class="w-full h-0.5 bg-pink-500 rounded-full"></div>
+          <div class="w-full h-0.5 bg-purple-500 rounded-full"></div>
         </div>
       </div>
 
       <!-- Social Login Buttons -->
       <div id="socialAccount" class="space-y-4">
-        <button class="w-full border border-pink-500 text-pink-500 py-3 rounded-lg flex items-center justify-center space-x-2 transition duration-300 hover:bg-pink-500 hover:text-white">
+        <button class="w-full border border-purple-500 text-purple-500 py-3 rounded-lg flex items-center justify-center space-x-2 transition duration-300 hover:bg-purple-500 hover:text-white">
           <i class="fa-brands fa-google"></i>
           <span>Login with Google</span>
         </button>
-        <button class="w-full border border-pink-500 text-pink-500 py-3 rounded-lg flex items-center justify-center space-x-2 transition duration-300 hover:bg-pink-500 hover:text-white">
+        <button class="w-full border border-purple-500 text-purple-500 py-3 rounded-lg flex items-center justify-center space-x-2 transition duration-300 hover:bg-purple-500 hover:text-white">
           <i class="fa-brands fa-facebook"></i>
           <span>Login with Facebook</span>
         </button>
